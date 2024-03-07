@@ -1,3 +1,82 @@
-h1 {
-    color: blue;
+* {
+    outline: 1px solid red; 
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+.lots {
+  display: flex;
+  width: 100%;
+  max-width: 1052px;
+  min-height: 692px;
+  margin: auto;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.lots__card-list-item {
+  list-style-type: none;
+  width: 334px;
+  height: 563px;
+  
+}
+
+.card-link {
+  list-style-type: none;
+}
+
+.lots__heading {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #000;
+  width: 121px;
+  height: 47px;
+  left: 159px;
+  bottom: 22px;
+}
+
+.card {
+  display: grid;
+  
+  grid-template-rows: 50% 88%;
+  grid-auto-rows: minmax(90px, auto);
+}
+
+.card h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #000;
+  margin: 0;
+  padding: 22px;
+}
+
+.card p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+
+.card__title {
+  
+}
+
